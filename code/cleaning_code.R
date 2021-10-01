@@ -37,7 +37,7 @@ library(tidyverse)
 
 
 ## Import downloaded data (and skip the 20 lines of metedata that accompanies each download):
-pbdb_data <- tbl_df(read.csv("./data/PBDB_download_Late_Triassic_tetrapods.csv", header = TRUE, skip = 20, stringsAsFactors=FALSE))
+pbdb_data <- read_csv("./data/PBDB_download_Late_Triassic_tetrapods.csv", skip = 20)
 pbdb_data # view tibble
 
 
